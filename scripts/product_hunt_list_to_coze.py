@@ -312,63 +312,64 @@ def fetch_mock_data():
                 }
             ]
         },
-        # {
-        #     "id": "2",
-        #     "name": "Mistral OCR",
-        #     "tagline": "Introducing the world's most powerful document understanding API",
-        #     "description": "Introducing Mistral OCR—an advanced, lightweight optical character recognition model focused on speed, accuracy, and efficiency. Whether extracting text from images or digitizing documents, it delivers top-tier performance with ease.",
-        #     "votesCount": 477,
-        #     "createdAt": "2025-03-07T16:01:00Z",
-        #     "featuredAt": "2025-03-07T16:01:00Z",
-        #     "website": "https://www.producthunt.com/r/SPXNTAWQSVRLGH",
-        #     "url": "https://www.producthunt.com/posts/mistral-ocr",
-        #     "media": [
-        #         {
-        #             "url": "https://ph-files.imgix.net/4224517b-29e4-4944-98c9-2eee59374870.png",
-        #             "type": "image",
-        #             "videoUrl": None
-        #         }
-        #     ]
-        # }
+        {
+            "id": "2",
+            "name": "Mistral OCR",
+            "tagline": "Introducing the world's most powerful document understanding API",
+            "description": "Introducing Mistral OCR—an advanced, lightweight optical character recognition model focused on speed, accuracy, and efficiency. Whether extracting text from images or digitizing documents, it delivers top-tier performance with ease.",
+            "votesCount": 477,
+            "createdAt": "2025-03-07T16:01:00Z",
+            "featuredAt": "2025-03-07T16:01:00Z",
+            "website": "https://www.producthunt.com/r/SPXNTAWQSVRLGH",
+            "url": "https://www.producthunt.com/posts/mistral-ocr",
+            "media": [
+                {
+                    "url": "https://ph-files.imgix.net/4224517b-29e4-4944-98c9-2eee59374870.png",
+                    "type": "image",
+                    "videoUrl": None
+                }
+            ]
+        }
     ]
     return [Product(**product) for product in mock_products]
 
 
 def post_products_coze(products, date_str):
-    """生成Markdown内容并保存到data目录"""
-    # 获取今天的日期并格式化
-    today = datetime.now(timezone.utc)
-    date_today = today.strftime('%Y-%m-%d')
+    # """生成Markdown内容并保存到data目录"""
+    # # 获取今天的日期并格式化
+    # today = datetime.now(timezone.utc)
+    # date_today = today.strftime('%Y-%m-%d')
 
-    product_jsons = []
-    for _, product in enumerate(products, top_count):
-        print(product.name)
-        product_jsons.append({
-            "name": product.name,
-            "tagline": product.tagline,
-            "description": product.description,
-            "votes_count": product.votes_count,
-            "created_at": product.created_at,
-            "featured": product.featured,
-            "website": product.website,
-            "url": product.url,
-            "og_image_url": product.og_image_url,
-            "keyword": product.keyword,
-            "translated_tagline": product.translated_tagline,
-            "trans_description": product.translated_description,
-        })
+    # product_jsons = []
+    # for _, product in enumerate(products, top_count):
+    #     print(product.name)
+    #     product_jsons.append({
+    #         "name": product.name,
+    #         "tagline": product.tagline,
+    #         "description": product.description,
+    #         "votes_count": product.votes_count,
+    #         "created_at": product.created_at,
+    #         "featured": product.featured,
+    #         "website": product.website,
+    #         "url": product.url,
+    #         "og_image_url": product.og_image_url,
+    #         "keyword": product.keyword,
+    #         "translated_tagline": product.translated_tagline,
+    #         "trans_description": product.trans_description,
+    #     })
 
-    to_post_data = {
-        "title": f"Product Hunt 每日精选 - {date_str}",
-        "date": date_today,
-        "description": f"这里是 {date_str} 在 Product Hunt 上的前 10 名产品。",
-        "products": product_jsons
-    }
+    # to_post_data = {
+    #     "title": f"Product Hunt 每日精选 - {date_str}",
+    #     "date": date_today,
+    #     "description": f"这里是 {date_str} 在 Product Hunt 上的前 10 名产品。",
+    #     "products": product_jsons
+    # }
+    to_post_data = {'title': 'Product Hunt 每日精选 - 2025-09-19', 'date': '2025-09-20', 'description': '这里是 2025-09-19 在 Product Hunt 上的前 10 名产品 。', 'products': [{'name': 'Magiclight', 'tagline': 'Intelligent story creation agent that creates long videos', 'description': 'MagicLight gives you the power to turn any script into a cinematic story video—within minutes. Whether you’re creating YouTube content, children’s stories, ads, or brand films, MagicLight is the AI Story Video Agent that makes storytelling effortless.', 'votes_count': 394, 'created_at': '2025年09月19日 PM03:01 (北京时间)', 'featured': '是', 'website': 'https://www.producthunt.com/r/TNTT6JA3H7ES3I?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+demo+%28ID%3A+224125%29', 'url': 'https://www.producthunt.com/products/magiclight-3?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+demo+%28ID%3A+224125%29', 'og_image_url': 'https://ph-files.imgix.net/c4d500bf-e2aa-4b3f-abbc-db60753528e3.png?auto=format', 'keyword': 'Magiclight,智能故事创作,长视频生成,AI视频代理,脚本转视频', 'translated_tagline': '智能故事创作代理，可生成长视频', 'trans_description': 'MagicLight让您只需几分钟就能将任何脚本转化为电影级故事视频。无 论是制作YouTube内容、儿童故事、广告还是品牌宣传片，MagicLight作为AI智能视频助手，让故事创作变得轻松自如。'}, {'name': 'Cursor for your API', 'tagline': 'Generate, edit, lint & test your API workflow in one place', 'description': 'Go from idea to tested API fast. Generate or import OpenAPI, edit with AI, lint, preview docs, and run calls in one place. Insights highlight Design/DX/Security and AI-readiness. Privacy-first and secure with your own model/key. One-click MCP export.', 'votes_count': 340, 'created_at': '2025年09月19日 PM03:01 (北京时间)', 'featured': '是', 'website': 'https://www.producthunt.com/r/5JSD4OEGJR3PPU?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+demo+%28ID%3A+224125%29', 'url': 'https://www.producthunt.com/products/theneo?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+demo+%28ID%3A+224125%29', 'og_image_url': 'https://ph-files.imgix.net/7c8b2df8-7574-4372-af6b-ca7216184989.png?auto=format', 'keyword': 'API开发工具,OpenAPI生成,AI编辑,API测试,隐私安全', 'translated_tagline': '一站式完成API工作流的生成、编辑、代码检查与测试', 'trans_description': '从创意到API测试，快速实现。生成或导入OpenAPI文档，通过AI辅助编辑、代码检查、实时预览文档，并一站式完成接口调用。智能分析功能可评估设计质量、开发者体验、安全规范及AI适配度。采用隐私优先策略，支持自定义模型与密钥保障数据安全。一键导出MCP配置。'}, {'name': 'ElevenLabs Studio 3.0 ', 'tagline': 'The best AI audio models in one powerful editor', 'description': 'Create, edit, and publish with AI. Add voiceovers, music, and sound effects, clean audio, and sync everything in one seamless editor.', 'votes_count': 267, 'created_at': '2025年09月19日 PM03:01 (北京时间)', 'featured': '是', 'website': 'https://www.producthunt.com/r/SILPH7V6RFPLZH?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+demo+%28ID%3A+224125%29', 'url': 'https://www.producthunt.com/products/elevenlabs?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+demo+%28ID%3A+224125%29', 'og_image_url': 'https://ph-files.imgix.net/a361eaff-0ebb-423d-b47a-2b077405e011.jpeg?auto=format', 'keyword': 'AI音频编辑,语音合成,音频处理,AI配音,音频制作', 'translated_tagline': '最强音频编辑器：集顶级AI模型于一体', 'trans_description': '借助AI实现创作、编辑与发布。添加旁白、音乐与音效，清理音频 ，并在一个无缝编辑器中同步所有内容。'}, {'name': 'iPhone Air', 'tagline': 'The thinnest iPhone ever, with A19 Pro chip power', 'description': 'Meet the iPhone Air - the thinnest and lightest iPhone ever created. Features a stunning 6.5" Super Retina XDR display, powerful A19 Pro chip, 18MP Center Stage front camera, 48MP Fusion Main camera, up to 27h video playback, and premium titanium design.', 'votes_count': 245, 'created_at': '2025年09月19日 PM03:01 (北京时间)', 'featured': '是', 'website': 'https://www.producthunt.com/r/W5CDP6HFSTAFPQ?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+demo+%28ID%3A+224125%29', 'url': 'https://www.producthunt.com/products/apple?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+demo+%28ID%3A+224125%29', 'og_image_url': 'https://ph-files.imgix.net/e6dee0ee-06bf-4290-88fb-2fb2ad92c5c5.png?auto=format', 'keyword': 'iPhone Air,最薄iPhone,A19 Pro芯片,钛金属设计,超视网膜XDR显示屏', 'translated_tagline': '史上最纤薄iPhone，搭载A19 Pro芯片强势驱动\n\n（注：翻译时采用"史上最纤薄"强化产品突破性，用"强势驱动" 替代直译"提供动力"更符合中文科技文案的动感表达，同时保持Apple产品一贯的简洁高级感。芯片名称"A19 Pro"保留英文大写格式符合科技行业惯例，整 体句式采用中文常用的四字结构增强节奏感。）', 'trans_description': 'iPhone Air惊艳问世——这是迄今为止最纤薄轻巧的iPhone。配备惊艳的6.5英寸 超视网膜XDR显示屏，搭载强悍的A19 Pro芯片，前置1800万像素人物居中摄像头，后置4800万像素融合主摄系统，视频播放续航最长达27小时，更采用高端 钛金属设计。'}, {'name': 'Google Chrome with AI', 'tagline': 'The browser you love, reimagined with AI', 'description': 'Google is taking the next step in its journey to make your browser smarter with new AI integrations.', 'votes_count': 184, 'created_at': '2025年09月19日 PM03:01 (北京时间)', 'featured': '是', 'website': 'https://www.producthunt.com/r/DMN5BL5B2VPBPI?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+demo+%28ID%3A+224125%29', 'url': 'https://www.producthunt.com/products/chrome-ai-edition?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+demo+%28ID%3A+224125%29', 'og_image_url': 'https://ph-files.imgix.net/64d32210-baae-453b-9c98-692352e53b29.png?auto=format', 'keyword': 'Google Chrome,AI浏览器,智能集成,浏览器升级,AI创新', 'translated_tagline': '您钟 爱的浏览器，现已融入AI智能革新', 'trans_description': '谷歌正通过新的人工智能集成技术，让您的浏览器变得更智能，迈出探索之旅的下一步。'}, {'name': 'My:Thiings', 'tagline': 'Elevate your brand with a custom icon collection.', 'description': 'Bring your brand to life with AI-powered custom icons. Pick a style, generate unique sets, tweak until perfect, and download instantly. Simple credit pricing, no subscriptions, full commercial use included.', 'votes_count': 155, 'created_at': '2025年09月19日 PM03:01 (北京时间)', 'featured': '是', 'website': 'https://www.producthunt.com/r/PGHR5QMA3TO63H?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+demo+%28ID%3A+224125%29', 'url': 'https://www.producthunt.com/products/the-thiings-collection-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+demo+%28ID%3A+224125%29', 'og_image_url': 'https://ph-files.imgix.net/cdffd2dd-7587-4a81-9fed-76c21d94ade6.png?auto=format', 'keyword': 'AI图标生成,品牌定制图标,图标设计,商业用途图标,无订阅图标服务', 'translated_tagline': '用定制图标套装提升品牌形象。', 'trans_description': '用AI定制图标，让品牌鲜活起来。选择风格，生成独特图标集，随心调整至完美，即刻下载。采用简洁的按次计费模式，无订阅捆绑，全面商用授权无忧。'}]}
 
     print(to_post_data)
 
     # Get an access_token through personal access token or oauth.
-    coze_api_token = 'cztei_hafSUaei1g37O64GoYNUISyHdH0HB41Z6MRASKodWDPH9K97xm3fvFXcv4NqBtRjq'
+    coze_api_token = os.getenv('coze_api_token')
     # The default access is api.coze.com, but if you need to access api.coze.cn,
     # please use base_url to configure the api endpoint to access
     coze_api_base = COZE_CN_BASE_URL
@@ -378,7 +379,7 @@ def post_products_coze(products, date_str):
     coze = Coze(auth=TokenAuth(token=coze_api_token), base_url=coze_api_base)
 
     # Create a workflow instance in Coze, copy the last number from the web link as the workflow's ID.
-    workflow_id = '7550337148278685738'
+    workflow_id = os.getenv('workflow_id')
     def handle_workflow_iterator(stream: Stream[WorkflowEvent]):
         for event in stream:
             if event.event == WorkflowEventType.MESSAGE:
@@ -405,19 +406,20 @@ def post_products_coze(products, date_str):
 
 def main():
     # 获取昨天的日期并格式化
-    yesterday = datetime.now(timezone.utc) - timedelta(days=1)
-    date_str = yesterday.strftime('%Y-%m-%d')
+    # yesterday = datetime.now(timezone.utc) - timedelta(days=1)
+    # date_str = yesterday.strftime('%Y-%m-%d')
 
-    try:
-        # 尝试获取Product Hunt数据
-        products = fetch_product_hunt_data()
-    except Exception as e:
-        print(f"获取Product Hunt数据失败: {e}")
-        print("使用模拟数据继续...")
-        products = fetch_mock_data()
+    # try:
+    #     # 尝试获取Product Hunt数据
+    #     products = fetch_product_hunt_data()
+    # except Exception as e:
+    #     print(f"获取Product Hunt数据失败: {e}")
+    #     print("使用模拟数据继续...")
+    #     products = fetch_mock_data()
 
     # 生成Markdown文件
-    post_products_coze(products, date_str)
+    # post_products_coze(products, date_str)
+    post_products_coze([], '')
 
 if __name__ == "__main__":
     main()
