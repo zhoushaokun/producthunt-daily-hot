@@ -1,32 +1,37 @@
 # PH今日热榜 | 2025-09-14
 
-## [1. Venice](https://www.producthunt.com/posts/venice-3)
-**标语**：Private & censorship-resistant AI | Unlock unlimited intelligence
-**介绍**：Venice is a private, censorship-resistant AI platform powered by open-source models and decentralized infrastructure. The app combines the benefits of decentralized blockchain technology with the power of generative AI.
-**产品网站**: [立即访问](https://www.producthunt.com/r/4D6Z6F7I3SXTGN)
-**Product Hunt**: [View on Product Hunt](https://www.producthunt.com/posts/venice-3)
+## [1. Google AI Edge Gallery](https://www.producthunt.com/products/google-ai-edge-gallery-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+demo+%28ID%3A+224125%29)
 
-![Venice](https://ph-files.imgix.net/97baee49-6dda-47f5-8a47-91d2c56e1976.jpeg)
+**标语**：本地可体验的设备端机器学习/生成式AI演示集锦
 
-**关键词**：Venice, censorship, Unlock unlimited intelligence, Private, resistant AI
-**票数**: 🔺566
+**介绍**：一个展示设备端机器学习/生成式人工智能用例的展馆，让人们能够在本地试用和运行模型。
+
+**产品网站**: [立即访问](https://www.producthunt.com/r/VRDKBPTOPP7H2P?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+demo+%28ID%3A+224125%29)
+
+**Product Hunt**: [View on Product Hunt](https://www.producthunt.com/products/google-ai-edge-gallery-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+demo+%28ID%3A+224125%29)
+
+![Google AI Edge Gallery](https://ph-files.imgix.net/c2388b2f-473d-4b52-95e4-5d0c74731d58.png?auto=format)
+
+**关键词**：Google AI Edge Gallery, on-device ML, GenAI demos, local AI models, machine learning gallery, edge computing AI, AI use cases, local model testing, generative AI, device-based AI, ML demonstrations, AI showcase, try AI
+
+**票数**: 🔺322
 **是否精选**：是
-**发布时间**：2025年03月08日 AM12:01 (北京时间)
+**发布时间**：2025年09月13日 PM03:01 (北京时间)
 
 ---
 
-## [2. Mistral OCR](https://www.producthunt.com/posts/mistral-ocr)
-**标语**：Introducing the world's most powerful document understanding API
-**介绍**：Introducing Mistral OCR—an advanced, lightweight optical character recognition model focused on speed, accuracy, and efficiency. Whether extracting text from images or digitizing documents, it delivers top-tier performance with ease.
-**产品网站**: [立即访问](https://www.producthunt.com/r/SPXNTAWQSVRLGH)
-**Product Hunt**: [View on Product Hunt](https://www.producthunt.com/posts/mistral-ocr)
+## [2. StoryChief](https://www.producthunt.com/products/storychief-io?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+demo+%28ID%3A+224125%29)
+**标语**：自动粘贴内容并优化AI搜索
+**介绍**：优化文章内容，适配SEO与AI搜索引擎。针对ChatGPT、Perplexity、Google AI等平台进行专项优化，显著提升内容在AI驱动搜索结果中的可见度。
+**产品网站**: [立即访问](https://www.producthunt.com/r/KIZODFIG34WFR6?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+demo+%28ID%3A+224125%29)
+**Product Hunt**: [View on Product Hunt](https://www.producthunt.com/products/storychief-io?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+demo+%28ID%3A+224125%29)
 
-![Mistral OCR](https://ph-files.imgix.net/4224517b-29e4-4944-98c9-2eee59374870.png)
+![StoryChief](https://ph-files.imgix.net/c66813c8-1115-4abe-8ec1-e9856987577c.png?auto=format)
 
-**关键词**：Mistral OCR, Introducing the world's most powerful document understanding API
-**票数**: 🔺477
+**关键词**：StoryChief, AI SEO optimization, content optimization, ChatGPT, Perplexity, Google AI, AI search engines, visibility boost, SEO tools, AI content enhancement
+**票数**: 🔺259
 **是否精选**：是
-**发布时间**：2025年03月08日 AM12:01 (北京时间)
+**发布时间**：2025年09月13日 PM03:01 (北京时间)
 
 ---
 
